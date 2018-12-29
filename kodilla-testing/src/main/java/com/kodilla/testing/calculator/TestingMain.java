@@ -2,6 +2,8 @@ package com.kodilla.testing.calculator;
 
 public class TestingMain {
     public static void main(String[] args){
+
+
         Calculator calculator = new Calculator();
 
         int result = calculator.substractAFromB(10, 5);
