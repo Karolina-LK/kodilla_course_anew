@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.forum.statistics.StaticticsTestSuite" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-01-24T10:08:55" hostname="Karo-AI" time="2.23">
+  <properties/>
+  <testcase name="testCalculateAdvStatisticsLessPostsThanComments" classname="com.kodilla.testing.forum.statistics.StaticticsTestSuite" time="2.211"/>
+  <testcase name="testCalculateAdvStatisticsLessCommentsThanPosts" classname="com.kodilla.testing.forum.statistics.StaticticsTestSuite" time="0.004"/>
+  <testcase name="testCalculateAdvStatisticsHundredUsersAndThousandPosts" classname="com.kodilla.testing.forum.statistics.StaticticsTestSuite" time="0.003"/>
+  <testcase name="testCalculateAdvStatisticsAllZeros" classname="com.kodilla.testing.forum.statistics.StaticticsTestSuite" time="0.002"/>
+  <testcase name="testCalculateAdvStatisticsHundredUsers" classname="com.kodilla.testing.forum.statistics.StaticticsTestSuite" time="0.006"/>
+  <system-out><![CDATA[Test Case: begin
+Beginning the test no: 1
+ Number of Users: 100
+ Number of posts: 100
+Number of comments: 1000
+ Average number of posts per User: 1.0
+ Average number of comments per User: 10.0
+ Average number of comments per post: 10.0
+Test no: 1 completed
+Beginning the test no: 2
+ Number of Users: 100
+ Number of posts: 1000
+Number of comments: 100
+ Average number of posts per User: 10.0
+ Average number of comments per User: 1.0
+ Average number of comments per post: 0.0
+Test no: 2 completed
+Beginning the test no: 3
+ Number of Users: 100
+ Number of posts: 1000
+Number of comments: 0
+ Average number of posts per User: 10.0
+ Average number of comments per User: 0.0
+ Average number of comments per post: 0.0
+Test no: 3 completed
+Beginning the test no: 4
+ Number of Users: 0
+ Number of posts: 0
+Number of comments: 0
+ Average number of posts per User: 0.0
+ Average number of comments per User: 0.0
+ Average number of comments per post: 0.0
+Test no: 4 completed
+Beginning the test no: 5
+ Number of Users: 100
+ Number of posts: 0
+Number of comments: 0
+ Average number of posts per User: 0.0
+ Average number of comments per User: 0.0
+ Average number of comments per post: 0.0
+Test no: 5 completed
+Test Case: end
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

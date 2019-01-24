@@ -23,7 +23,7 @@ public class BookLibrary {
     }
 
     public List<Book> listBooksInHandsOf(LibraryUser libraryUser) {
-        //nie wie, czemu mu sie nie podoba variable ArrayList
+        //nie wiem, czemu mu sie nie podoba variable ArrayList
         //i nie do końca rozumiem ideę tej metody tu; czemu mamy niejako dwie listy uzytkownikow ksiazek, tu i w interfejsie
         List<Book> bookList = new ArrayList<Book>();
         bookList = libraryDatabase.listBooksInHandsOf(libraryUser);

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.library.BookDirectoryTestSuite" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-01-24T10:08:57" hostname="Karo-AI" time="0.402">
+  <properties/>
+  <testcase name="testListBooksWithConditionFragmentShorterThan3" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.352"/>
+  <testcase name="testlistBooksInHandsOfFiveBorrowedBooks" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.024"/>
+  <testcase name="testListBooksWithConditionMoreThan20" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.006"/>
+  <testcase name="testListBooksWithConditionsReturnList" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.001"/>
+  <testcase name="testlListBooksInHandsOfNoBorrowedBooks" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.009"/>
+  <testcase name="testlistBooksInHandsOfOneBorrowedBooks" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

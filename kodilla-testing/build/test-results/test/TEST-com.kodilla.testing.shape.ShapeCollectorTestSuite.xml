@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.shape.ShapeCollectorTestSuite" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-01-24T10:08:57" hostname="Karo-AI" time="0.023">
+  <properties/>
+  <testcase name="testCaseShowFigures" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite" time="0.016"/>
+  <testcase name="testCaseRemoveFigures" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite" time="0.001"/>
+  <testcase name="testCaseRemoveFiguresNotExisting" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite" time="0.001"/>
+  <testcase name="testCaseAddFigure" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite" time="0.0"/>
+  <testcase name="testCaseGetFigure" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite" time="0.001"/>
+  <system-out><![CDATA[This is the beginning of tests.
+Preparing to execute test #1
+Figure: This is a circle Field: 12.56 m2
+Test # 1 executed
+Preparing to execute test #2
+Test # 2 executed
+Preparing to execute test #3
+Test # 3 executed
+Preparing to execute test #4
+Test # 4 executed
+Preparing to execute test #5
+Test # 5 executed
+All tests are finished.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
