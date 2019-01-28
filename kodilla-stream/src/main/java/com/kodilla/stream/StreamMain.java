@@ -1,13 +1,7 @@
 package com.kodilla.stream;
 
-import com.kodilla.stream.forumuser.Forum;
-import com.kodilla.stream.forumuser.ForumUser;
-
-import java.util.Map;
-import java.util.stream.Collectors;
-
 public class StreamMain {
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
        Forum theForum = new Forum();
         Map<String, ForumUser> theResultMapOfUsers = theForum.getUserList().stream()
                 .filter(forumUser -> forumUser.getSex() == 'M')
@@ -22,6 +16,6 @@ public class StreamMain {
 //kiedy userID był int, program nie działał, kiedy zrobiłam jak wprzkładzie modułu, czyli String, ruszyło; nie wiem,
 // dlaczego- chciałabym ewentualnie razem to przerobić we wtorek
 
-    }
+    }*/
 
 }
