@@ -21,7 +21,7 @@ public class FirstChallenge {
             double result = firstChallenge.divide(3, 0);
 
             System.out.println(result);
-        } catch (ArithmeticException e) {
+        } catch (Exception e) {
             System.out.println("You should not devide by O! ");
         }
         finally {
