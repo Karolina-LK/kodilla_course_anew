@@ -9,7 +9,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Random;
 
-public class gameFlow extends JFrame implements ActionListener {
+public class GameFlow extends JFrame implements ActionListener {
     private static final long serialVersionUID = 1L;
 
     public class JLabelBox extends JLabel {
@@ -39,7 +39,7 @@ public class gameFlow extends JFrame implements ActionListener {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    gameFlow frame = new gameFlow();
+                    GameFlow frame = new GameFlow();
                     frame.setVisible(true);
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -51,7 +51,7 @@ public class gameFlow extends JFrame implements ActionListener {
     /**
      * Create the frame.
      */
-                public gameFlow() {
+                public GameFlow() {
                     TTT = new TicTacToeGame();
                     setResizable(false);
                     setTitle("TicTacToe");
