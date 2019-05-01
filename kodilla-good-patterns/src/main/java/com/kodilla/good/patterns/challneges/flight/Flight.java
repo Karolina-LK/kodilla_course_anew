@@ -1,5 +1,7 @@
 package com.kodilla.good.patterns.challneges.flight;
 
+import java.util.Objects;
+
 public final class Flight {
 
     private final String departureAirport;
@@ -7,7 +9,6 @@ public final class Flight {
 
     public Flight(String departureAirport, String arrivalAirport) {
         this.departureAirport = departureAirport;
-      //  this.intermediateAirport = intermediateAirport;
         this.arrivalAirport = arrivalAirport;
     }
 
@@ -26,22 +27,20 @@ public final class Flight {
 
         Flight flight = (Flight) o;
 
-        if (!departureAirport.equals(flight.departureAirport)) return false;
-        return arrivalAirport.equals(flight.arrivalAirport);
+        return Objects.equals(departureAirport, flight.departureAirport) &&
+                Objects.equals(arrivalAirport, flight.arrivalAirport);
     }
 
     @Override
     public int hashCode() {
-        int result = departureAirport.hashCode();
-        result = 31 * result + arrivalAirport.hashCode();
-        return result;
+        return Objects.hash(departureAirport, arrivalAirport);
     }
 
     @Override
     public String toString() {
-        return "Flight{" +
-                "departureAirport='" + departureAirport + '\'' +
-                ", arrivalAirport='" + arrivalAirport + '\'' +
-                '}';
+        return "Flight: " +
+                "departure airport: '" + departureAirport + '\'' +
+                ", arrival airport: '" + arrivalAirport + '\'';
+
     }
 }

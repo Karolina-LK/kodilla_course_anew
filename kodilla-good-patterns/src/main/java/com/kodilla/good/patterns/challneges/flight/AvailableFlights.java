@@ -1,19 +1,19 @@
 package com.kodilla.good.patterns.challneges.flight;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 public final class AvailableFlights {
 
-    public static Map<Integer, Flight> getAvailableFlights() {
+    public static List<Flight> getAvailableFlights() {
+        List<Flight> availableFlights = new ArrayList<>();
+        availableFlights.add(new Flight("Warsaw", "London"));
+        availableFlights.add(new Flight("London", "New York"));
+        availableFlights.add(new Flight("Oslo", "Moscow"));
+        availableFlights.add(new Flight("Moscow", "Beijing"));
+        availableFlights.add(new Flight("London", "Beijing"));
+        availableFlights.add(new Flight("Beijing", "Delhi"));
 
-        Map<Integer, Flight> availableFlights = new HashMap<>();
-        availableFlights.put(1, new Flight("Warszawa",  "Wrocław"));
-        availableFlights.put(2, new Flight("Gdańsk", "Warszawa"));
-        availableFlights.put(3, new Flight("Warszawa",  "Gdańsk"));
-        availableFlights.put(4, new Flight("Gdańsk",  "Katowice"));
-        availableFlights.put(3, new Flight("Warszawa", "Gdańsk"));
-
-        return availableFlights;
+        return new ArrayList<>(availableFlights);
     }
 }

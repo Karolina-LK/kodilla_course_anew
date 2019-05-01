@@ -1,21 +1,32 @@
 package com.kodilla.good.patterns.challneges.flight;
 
-import java.util.Map;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public final class FlightFinder {
 
-    public void findFlightFromAirport(String departureAirport, Map<Integer, Flight> availableFlights) {
+    public static List<Flight> searchByDepartureAirport(String departureAirport) {
+        return AvailableFlights.getAvailableFlights().stream()
+                .filter(f -> f.getDepartureAirport().equals(departureAirport))
+                .collect(Collectors.toList());
 
-        System.out.println("\n" +"Available flights from: " + departureAirport + "\n");
-        availableFlights.entrySet().stream()
-                .filter(entry -> entry.getValue().getDepartureAirport().equals(departureAirport))
-                .forEach(System.out::println);
     }
 
-    public void findFlightToAirport(String arrivalAirport, Map<Integer, Flight> availableFlights) {
-        System.out.println("\n" + "Available flights to: " + arrivalAirport + "\n");
-        availableFlights.entrySet().stream()
-                .filter(entry -> entry.getValue().getDepartureAirport().equals(arrivalAirport))
-                .forEach(System.out::println);
+    public static List<Flight> searchByArrivalAirport(String arrivalAirport) {
+        return AvailableFlights.getAvailableFlights().stream()
+                .filter(f -> f.getArrivalAirport().equals(arrivalAirport))
+                .collect(Collectors.toList());
+
+    }
+
+    public static List<Flight> searchForConnectingFlights(String departureAirport, String connectingCity, String arrivalAirport) {
+        List<Flight> result = AvailableFlights.getAvailableFlights().stream()
+                .filter(f -> (f.getDepartureAirport().equals(departureAirport)) && (f.getArrivalAirport().equals(connectingCity)))
+                .collect(Collectors.toList());
+
+        result.addAll(AvailableFlights.getAvailableFlights().stream()
+                .filter(f -> f.getDepartureAirport().equals(connectingCity) && f.getArrivalAirport().equals(arrivalAirport))
+                .collect(Collectors.toList()));
+        return result;
     }
 }
